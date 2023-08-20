@@ -20,7 +20,7 @@
     </nav>
     <section class='grid-section animais' id="'animais">
      <h1 class="titulo">Animais Fantásticos</h1> 
-     <ul class="animais-lista js-tabmenu">
+     <ul class="animais-lista" data-tab="menu">
         <li><img src="img/imagem1.jpg" alt="raposa"></li>
         <li><img src="img/imagem2.jpg" ></li>
         <li><img src="img/imagem3.jpg" ></li>
@@ -28,43 +28,43 @@
         <li><img src="img/imagem5.jpg"></li>
         <li><img src="img/imagem6.jpg" ></li>
      </ul> 
-     <div class='animais-descricao js-tabcontent'>
-        <section> 
+     <div class='animais-descricao' data-tab="content">
+        <section data-anime="show-right"> 
             <h2>Raposa</h2> 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, at eligendi? Ipsam, voluptate. Molestiae, quo? Quibusdam voluptates culpa sed, veniam facilis minus doloribus vel necessitatibus. </p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum esse quasi omnis, accusamus quas voluptatem magni ea magnam repellendus possimus, at reprehenderit delectus. Est, cupiditate.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nemo placeat debitis aliquid, nam ullam hic cum, voluptatibus dolorum eius dolor eos ducimus voluptatum consequatur!</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel maiores debitis ex sit autem sunt, nam, delectus qui voluptatum neque fugiat, iste ipsum nihil commodi?</p>
         </section>
-        <section>
+        <section data-anime="show-down">
             <h2>Esquilo</h2> 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, at eligendi? Ipsam, voluptate. Molestiae, quo? Quibusdam voluptates culpa sed, veniam facilis minus doloribus vel necessitatibus. </p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum esse quasi omnis, accusamus quas voluptatem magni ea magnam repellendus possimus, at reprehenderit delectus. Est, cupiditate.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nemo placeat debitis aliquid, nam ullam hic cum, voluptatibus dolorum eius dolor eos ducimus voluptatum consequatur!</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel maiores debitis ex sit autem sunt, nam, delectus qui voluptatum neque fugiat, iste ipsum nihil commodi?</p>
         </section>
-        <section>
+        <section data-anime="show-right">
             <h2>Urso</h2> 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, at eligendi? Ipsam, voluptate. Molestiae, quo? Quibusdam voluptates culpa sed, veniam facilis minus doloribus vel necessitatibus. </p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum esse quasi omnis, accusamus quas voluptatem magni ea magnam repellendus possimus, at reprehenderit delectus. Est, cupiditate.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nemo placeat debitis aliquid, nam ullam hic cum, voluptatibus dolorum eius dolor eos ducimus voluptatum consequatur!</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel maiores debitis ex sit autem sunt, nam, delectus qui voluptatum neque fugiat, iste ipsum nihil commodi?</p>
         </section>
-        <section>
+        <section data-anime="show-down">
             <h2>Lobo</h2> 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, at eligendi? Ipsam, voluptate. Molestiae, quo? Quibusdam voluptates culpa sed, veniam facilis minus doloribus vel necessitatibus. </p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum esse quasi omnis, accusamus quas voluptatem magni ea magnam repellendus possimus, at reprehenderit delectus. Est, cupiditate.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nemo placeat debitis aliquid, nam ullam hic cum, voluptatibus dolorum eius dolor eos ducimus voluptatum consequatur!</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel maiores debitis ex sit autem sunt, nam, delectus qui voluptatum neque fugiat, iste ipsum nihil commodi?</p>
             </section>
-        <section>
+        <section data-anime="show-right">
             <h2>Macaco</h2> 
              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, at eligendi? Ipsam, voluptate. Molestiae, quo? Quibusdam voluptates culpa sed, veniam facilis minus doloribus vel necessitatibus. </p>
              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum esse quasi omnis, accusamus quas voluptatem magni ea magnam repellendus possimus, at reprehenderit delectus. Est, cupiditate.</p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nemo placeat debitis aliquid, nam ullam hic cum, voluptatibus dolorum eius dolor eos ducimus voluptatum consequatur!</p>
              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel maiores debitis ex sit autem sunt, nam, delectus qui voluptatum neque fugiat, iste ipsum nihil commodi?</p>
         </section>
-         <section>
+         <section data-anime="show-down">
              <h2>Leao</h2> 
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, at eligendi? Ipsam, voluptate. Molestiae, quo? Quibusdam voluptates culpa sed, veniam facilis minus doloribus vel necessitatibus. </p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum esse quasi omnis, accusamus quas voluptatem magni ea magnam repellendus possimus, at reprehenderit delectus. Est, cupiditate.</p>
@@ -76,7 +76,7 @@
      </div>
     </section>
 
-         <section class="grid-section faq " id='faq '>
+         <section class="grid-section faq " data-anime="scroll" id='faq '>
         <h1 class="titulo">FAQ</h1>
         <dl class='faq-lista js-accordion'>
             <dt>Qual a idade dos animais?</dt>
@@ -97,7 +97,7 @@
         </dl>
     </section>
 
-    <section class="grid-section contato" id="contato">
+    <section class="grid-section contato" data-anime="scroll" id="contato">
         <h1 class="titulo">Contato</h1>
         <div class='mapa'>
             <img src="img/mapa.png" >
