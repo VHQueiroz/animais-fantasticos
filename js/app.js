@@ -46,4 +46,24 @@ function initAccordion(){
   
   initAccordion();
 
-  console.log(initNav())
+  function initScrollSuave(){
+   
+    const linksInternos = document.querySelectorAll('[data-menu="suave"] a[href^="#"]')
+
+    function scrollToSection(event){
+      event.preventDefault();
+      const href = event.currentTarget.getAttribute('href');
+      const section = document.querySelector(href);
+      const topo = section.offsetTop;
+      section.scrollIntoView({
+        behavior: 'smooth',
+        block:'start',
+      }) //Só funciona no Chrome e no Firefox?
+    }
+  
+    linksInternos.forEach((link)=>{
+      link.addEventListener('click',scrollToSection);
+    })
+  }
+
+initScrollSuave();
