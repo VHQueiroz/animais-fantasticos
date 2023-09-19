@@ -26,7 +26,7 @@ function initTabNav(){
 initTabNav();
 
 function initAccordion(){
-  const accordionList = document.querySelectorAll('.js-accordion dt');
+  const accordionList = document.querySelectorAll('[data-anime="accordion"] dt');
   const activeClass = 'ativo';
   if(accordionList.length){
     accordionList[0].classList.add(activeClass)
@@ -54,7 +54,6 @@ function initAccordion(){
       event.preventDefault();
       const href = event.currentTarget.getAttribute('href');
       const section = document.querySelector(href);
-      const topo = section.offsetTop;
       section.scrollIntoView({
         behavior: 'smooth',
         block:'start',
@@ -67,3 +66,26 @@ function initAccordion(){
   }
 
 initScrollSuave();
+
+function initAnimacaoScroll() {
+  const sections = document.querySelectorAll('[data-anime="scroll"]');
+  if(sections.length) {
+    const windowMetade = window.innerHeight * 0.6;
+
+    function animaScroll() {
+      sections.forEach((section) => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const isSectionVisible = (sectionTop - windowMetade) < 0;
+        if(isSectionVisible)
+          section.classList.add('ativo');
+        else 
+          section.classList.remove('ativo');
+      })
+    }
+
+    animaScroll();
+
+    window.addEventListener('scroll', animaScroll);
+  }
+}
+initAnimacaoScroll();
