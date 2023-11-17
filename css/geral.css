@@ -285,3 +285,17 @@ body,h1,h2,h3,ul,li,p,dd,dt,dl{
     transform: translate3d(0,0,0);
   }
   
+  [data-semana]::after{
+    display: inline-block;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #e54;
+    border-radius: 50%;
+    margin-left: 4px;
+    border: 2px solid #000;
+  }
+
+  [data-semana].aberto::after{
+  background: #3F4;
+  }
