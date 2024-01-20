@@ -1,21 +1,16 @@
-
-export default function initScrollSuave(){
-   
-  const linksInternos = document.querySelectorAll('[data-menu="suave"] a[href^="#"]')
-
-  function scrollToSection(event){
+export default function initScrollSuave() {
+  const linksInternos = document.querySelectorAll('[data-menu="suave"] a[href^="#"]');
+  function scrollToSection(event) {
     event.preventDefault();
     const href = event.currentTarget.getAttribute('href');
     const section = document.querySelector(href);
     section.scrollIntoView({
       behavior: 'smooth',
-      block:'start',
-    }) //Só funciona no Chrome e no Firefox?
+      block: 'start',
+    }); // Só funciona no Chrome e no Firefox?
   }
 
-  linksInternos.forEach((link)=>{
-    link.addEventListener('click',scrollToSection);
-  })
+  linksInternos.forEach((link) => {
+    link.addEventListener('click', scrollToSection);
+  });
 }
-
-
